@@ -1,28 +1,56 @@
-# AngularCliHeroku
+# cloud-cardboard-viewer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.3.
+## Prepare a project
 
-## Development server
+1. Create a [Google Account](https://accounts.google.com/SignUpWithoutGmail?service=cloudconsole&continue=https%3A%2F%2Fconsole.developers.google.com%2F&ltmpl=api) if you don't have one
+1. Sign up for the [free trial](https://console.cloud.google.com/freetrial)
+1. Create a project in the Google Cloud Platform Console.
+  1. Open the [Cloud Platform Console](https://console.cloud.google.com/).
+  1. In the dropdown menu at the top, select __Create a project__.
+  1. Give your project a name
+1. [Enable billing](https://console.cloud.google.com/billing) for your project
+1. Enable the [YouTube Data API c3](https://console.developers.google.com/apis/api/youtube/overview).
+1. Create an API key.
+1. Install the [Google Cloud SDK](https://cloud.google.com/sdk/).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Run locally
 
-## Code scaffolding
+1. Clone the project:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+        git clone https://github.com/googlecodelabs/cloud-cardboard-viewer.git
 
-## Build
+1. Change directory into the project folder:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+        cd cloud-cardboard-viewer
 
-## Running unit tests
+1. Install dependencies:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+        npm install
 
-## Running end-to-end tests
+1. Start the server:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+        export API_KEY=YOUR_API_KEY
+        npm start
 
-## Further help
+    or
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+        API_KEY=YOUR_API_KEY npm start
+
+    replacing `YOUR_API_KEY` with your API key.
+
+1. View the app at [http://localhost:8080](http://localhost:8080).
+
+## Deploy to Google Cloud Platform
+
+### Deploy your local app
+
+1. Set `API_KEY` environment variables in the `app.yaml` file.
+1. Run `gcloud app deploy`.
+
+# License
+
+Apache Version 2.0
+
+See [LICENSE](LICENSE).
+
+*This is not an official Google product*
