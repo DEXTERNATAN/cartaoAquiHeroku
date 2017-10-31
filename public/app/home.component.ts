@@ -17,19 +17,12 @@
 
 import { Component } from '@angular/core';
 import { Http } from '@angular/http';
-import { Video, VideoCardComponent } from './video-card.component';
+// import { Video, VideoCardComponent } from './video-card.component';
 
 @Component({
   moduleId: module.id,
   selector: 'home',
-  template: `
-  <h1>3D Cardboard Videos</h1>
-  <div class="mui--text-dark-secondary mui--text-body2">
-    {{ resultsPerPage }} of {{ totalResults }} results
-  </div>
-  <div class="mui-divider"></div>
-  <video-card [video]="video" *ngFor="let video of videos"></video-card>
-  `
+  templateUrl:'./home.component.html' 
 })
 export class HomeComponent {
   resultsPerPage: number;
@@ -39,11 +32,11 @@ export class HomeComponent {
 
   }
   ngOnInit () {
-    this.http.get('/data.json').subscribe((res) => {
-      const data = res.json();
-      this.resultsPerPage = data.pageInfo.resultsPerPage;
-      this.totalResults = data.pageInfo.totalResults;
-      this.videos = data.items.map((video) => new Video(video));
-    });
+    // this.http.get('/data.json').subscribe((res) => {
+    //   const data = res.json();
+    //   this.resultsPerPage = data.pageInfo.resultsPerPage;
+    //   this.totalResults = data.pageInfo.totalResults;
+    //   this.videos = data.items.map((video) => new Video(video));
+    // });
   }
 }

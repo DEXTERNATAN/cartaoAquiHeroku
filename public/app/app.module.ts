@@ -25,6 +25,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
+//import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about.component';
 import { VideoCardComponent } from './video-card.component';
 
