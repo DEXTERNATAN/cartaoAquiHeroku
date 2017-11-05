@@ -4,12 +4,12 @@ import { Component } from '@angular/core';
 
 @Component({
   moduleId: module.id,
-  selector: 'cartaoComponente',
+  selector: 'configCartaoComponente',
   styles: [`
   .router-link-active {
     text-decoration: underline;
   }
   `],
-  templateUrl: './cartao.component.html'
+  templateUrl: './configCartao.component.html'
 })
-export class cartaoComponente {}
+export class configCartaoComponente {}
