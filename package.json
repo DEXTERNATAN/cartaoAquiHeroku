@@ -22,5 +22,8 @@
   },
   "engines": {
     "node": "~6"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.5.0"
   }
 }

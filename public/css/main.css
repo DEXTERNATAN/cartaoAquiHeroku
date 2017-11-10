@@ -2,22 +2,15 @@
 /*************************
 *******Typography******
 **************************/
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
-@import url(http://fonts.googleapis.com/css?family=Abel);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Abel);
 
 body {
   font-family: 'Roboto', sans-serif;
   background:;
   position: relative;
   font-weight:400px;
-}
-{ }
-#box-area-clientes{
-  position: absolute;
-  background: #EEEEEE;
-  position:fixed; top:0%; left: 0; right:0%;
-  z-index: 100; /* número máximo é 9999 */ 
 }
 ul li {
   list-style: none;
@@ -74,7 +67,7 @@ a#scrollUp i{
 **************************/
 
 .header_top {
-  background: none repeat scroll 0 0 #CAE1FF;
+  background: none repeat scroll 0 0 #CCC;
 }
 
 .contactinfo ul li:first-child{
@@ -898,7 +891,8 @@ h2.title {
 }
 
 .product-overlay {
-  background:#64B1FF;
+  
+  background-image:url(../images/home/transparente.fw.png);
   top: 0;
   display: none;
   height: 0;
@@ -2528,152 +2522,159 @@ h2.title {
 }
 
 
+.Bgbranco {
+  background: #FFF;
+}#fixedContainer {
+background-color:#FFF;
+ position: fixed;
+ width: 1024;
+ height: 50px;
+ left: 0%;
+ top: 6%;
+ margin-left: -300px; /*half the width*/
+z-index: 80;
+}#box-area-clientes{
+position: absolute;
+position:fixed; top:7%; left: 0; right:0%;
+background-color:#FFF;
+z-index: 100;
+}       #Spaces{
+background-color:#FFF;
+position: absolute;
+position:relative; top:7%; left: 0; right:0%;
+background:#FFF
+z-index: 100;
+}
+body,td,th {
+font-family: Roboto, sans-serif;
+}
+body {
+background-color: #EEE;
+}input[type=text] {
+width: 280px;
+box-sizing: border-box;
+border: 2px solid #ccc;
+border-radius: 4px;
+font-size: 16px;
+background-color: white;
+background-image: url('images/home/searchicon.png');
+background-position: 10px 10px; 
+background-repeat: no-repeat;
+padding: 12px 20px 12px 40px;
+-webkit-transition: width 0.4s ease-in-out;
+transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+width: 90%;
+}/* carousel */
+#quote-carousel 
+{
+padding: 0 10px 30px 10px;
+margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+background: none;
+color: #222;
+font-size: 2.3em;
+text-shadow: none;
+margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+right: 50%;
+top: auto;
+bottom: 0px;
+margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+background: #333333;
+}
+#quote-carousel img
+{
+width: 250px;
+height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+border-left: none; 
+margin: 0;
+}
+
+.item blockquote img {
+margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+content: "\f10d";
+font-family: 'Fontawesome';
+float: left;
+margin-right: 10px;
+}
 
 
-/*************************
-******* ConfigCartao CSS ********
-**************************/
 
+/**
+MEDIA QUERIES
+*/
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+#quote-carousel 
+{
+margin-bottom: 0;
+padding: 0 40px 30px 40px;
+}
+
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+
+/* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+
+#quote-carousel .carousel-indicators {
+bottom: -20px !important;  
+}
+#quote-carousel .carousel-indicators li {
+display: inline-block;
+margin: 0px 5px;
+width: 15px;
+height: 15px;
+}
+#quote-carousel .carousel-indicators li.active {
+margin: 0px 5px;
+width: 20px;
+height: 20px;
+}
+}
 #apDiv1 {
-	position: fixed;
-	width: 240px;
-	height: 410px;
-	z-index: 1051;
-	left: 1107px;
-	top: 220px;
-} #box-area-clientes{
-  position: absolute;
-	position:fixed; top:0%; left: 0; right:0%;
-  z-index: 100; /* número máximo é 9999 */
-}#pricing-table {
-    margin: 100px auto;
-    text-align: center;
-    width: 892px; /* total computed width = 222 x 3 + 226 */
-}
-
-#pricing-table .plan {
-    font: 12px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
-    text-shadow: 0 1px rgba(255,255,255,.8);        
-    background: #fff;      
-    border: 1px solid #ddd;
-    color: #333;
-    padding: 20px;
-    width: 180px; /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */      
-    float: left;
-    position: relative;
-}
-
-#pricing-table #most-popular {
-    z-index: 2;
-    top: -13px;
-    border-width: 3px;
-    padding: 30px 20px;
-    border-radius: 5px;
-    box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);    
-}
-
-#pricing-table .plan:nth-child(1) {
-    border-radius: 5px 0 0 5px;        
-}
-
-#pricing-table .plan:nth-child(4) {
-    border-radius: 0 5px 5px 0;        
-}
-
-/* --------------- */   
-
-#pricing-table h3 {
-    font-size: 20px;
-    font-weight: normal;
-    padding: 20px;
-    margin: -20px -20px 50px -20px;
-    background-color: #eee;
-    background-image: linear-gradient(#fff, #eee);
-}
-
-#pricing-table #most-popular h3 {
-    background-color: #ddd;
-    background-image: linear-gradient(#eee, #ddd);
-    margin-top: -30px;
-    padding-top: 30px;
-    border-radius: 5px 5px 0 0;         
-}
-
-#pricing-table .plan:nth-child(1) h3 {
-    border-radius: 5px 0 0 0;       
-}
-
-#pricing-table .plan:nth-child(4) h3 {
-    border-radius: 0 5px 0 0;       
-}   
-
-#pricing-table h3 span {
-    display: block;
-    font: bold 25px/100px Georgia, Serif;
-    color: #777;
-    background: #fff;
-    border: 5px solid #fff;
-    height: 100px;
-    width: 100px;
-    margin: 10px auto -65px;
-    border-radius: 100px;
-    box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
-}
-
-/* --------------- */
-
-#pricing-table ul {
-    margin: 20px 0 0 0;
-    padding: 0;
-    list-style: none;
-}
-
-#pricing-table li {
-    border-top: 1px solid #ddd;
-    padding: 10px 0;
-}
-
-/* --------------- */
-    
-#pricing-table .signup {
-    position: relative;
-    padding: 8px 20px;
-    margin: 20px 0 0 0;  
-    color: #fff;
-    font: bold 14px Arial, Helvetica;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;       
-    background-color: #72ce3f;
-    background-image: linear-gradient(#72ce3f, #62bc30);
-    border-radius: 3px;     
-    text-shadow: 0 1px 0 rgba(0,0,0,.3);        
-    box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
-}
-
-#pricing-table .signup:hover {
-    background-color: #62bc30;
-    background-image: linear-gradient(#62bc30, #72ce3f); 
-}
-
-#pricing-table .signup:active, #pricing-table .signup:focus {
-    background: #62bc30;       
-    top: 2px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset; 
-}
-
-/* --------------- */
-
-.clear:before, .clear:after {
-  content:"";
-  display:table
-}
-
-.clear:after {
-  clear:both
-}
-
-.clear {
-  zoom:1
+position: absolute;
+width: 100%;
+height: 115px;
+z-index: 1;
+left: 0px;
+right: 0px;
+top: 2400px;
 }
