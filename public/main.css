@@ -2,21 +2,15 @@
 /*************************
 *******Typography******
 **************************/
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
-@import url(https://fonts.googleapis.com/css?family=Abel);
+@import url(https://fonts.googleapis.com/css?family=Abel); */
 
 body {
   font-family: 'Roboto', sans-serif;
   background:;
   position: relative;
   font-weight:400px;
-}
-#box-area-clientes{
-  position: absolute;
-  background: #EEEEEE;
-  position:fixed; top:0%; left: 0; right:0%;
-  z-index: 100; /* número máximo é 9999 */ 
 }
 ul li {
   list-style: none;
@@ -73,7 +67,7 @@ a#scrollUp i{
 **************************/
 
 .header_top {
-  background: none repeat scroll 0 0 #CAE1FF;
+  background: none repeat scroll 0 0 #CCC;
 }
 
 .contactinfo ul li:first-child{
@@ -897,7 +891,8 @@ h2.title {
 }
 
 .product-overlay {
-  background:#64B1FF;
+  
+  background-image:url(../images/home/transparente.fw.png);
   top: 0;
   display: none;
   height: 0;
